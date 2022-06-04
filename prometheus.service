@@ -1,0 +1,9 @@
+[Unit]
+Description=Prom service
+
+[Service]
+WorkingDirectory=/etc/prometheus/
+ExecStart=/etc/prometheus/prometheus --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/etc/prometheus/d>
+
+[Install]
+WantedBy=multi-user.target
